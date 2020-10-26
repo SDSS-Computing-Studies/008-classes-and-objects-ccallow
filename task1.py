@@ -23,24 +23,28 @@ constructor     - should require the student name, studentNumber and grade (in t
 """
 
 class student:
-    self.name = input("Enter your Name:").strip()
-    self.studentNumber = input("Enter your student number:").strip()
-    self.grade = int(input("Enter your grade:"))
+    name = ""
+    studentNumber = ""
+    grade = int()
+    courses = []
+    grades = []
     
-    def.getCourses(x):
-        Courses = [x]
+    def getCourses(self,courses):
+        self.courses = [courses]
 
-    def.getGrades(y):
-        Grades = [y]
+    def getGrades(self,grades):
+        self.grades = [grades]
 
     def __init__(self,name,studentNumber,grade): # You will need to create your own input parameters for all methods
-        
+        self.name = name
+        self.studentNumber = studentNumber
+        self.grade = grade
 
-    def __del__():
+    def __del__(self):
         pass
 
     def average(self):
-        
+        pass
 
 def main():
     # This contains test data that will be used by the autograder.
@@ -48,13 +52,11 @@ def main():
 
     st1 = student("Anita Bath","91334",11)
     st1.getCourses( ["English","Math","PE","Computers","History","Biology","Japanese"] )
-    st1.getGrades( 91, 94, 87, 99, 82, 100, 73)
+    st1.getGrades([91, 94, 87, 99, 82, 100, 73])
 
     st2 = student("Joe Lunchbox","12346", 11)
     st1.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
-    st1.getGrades( 71, 98, 93, 95, 68, 81, 71)
-
-
+    st1.getGrades( [71, 98, 93, 95, 68, 81, 71])
 
 
 main()
