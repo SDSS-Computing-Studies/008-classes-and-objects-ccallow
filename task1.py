@@ -39,11 +39,14 @@ class student:
         self.name = name
         self.studentNumber = studentNumber
         self.grade = grade
+        
+    def getHonorRoll (self, grades):
+        
 
     def __del__(self):
         pass
 
-    def average(self):
+    def average(self, grades):
         pass
 
 def main():
