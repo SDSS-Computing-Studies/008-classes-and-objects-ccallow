@@ -38,9 +38,9 @@ class student:
        lisgrade.insert(1,grade2)
        lisgrade.insert(2,grade3)
        lisgrade.insert(3,grade4)
-       lis1.insert(4,grade5)
-       lis1.insert(5,grade6)
-       lis1.insert(6,grade7)
+       lisgrade.insert(4,grade5)
+       lisgrade.insert(5,grade6)
+       lisgrade.insert(6,grade7)
        self.grades = lisgrade
 
     def __init__(self,name,studentNumber,grade): # You will need to create your own input parameters for all methods
