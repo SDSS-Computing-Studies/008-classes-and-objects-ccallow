@@ -66,7 +66,7 @@ class student:
         
     def getHonorRoll (self):
         lisgrades = self.grades
-        sort.lisgrades(reverse=True)
+        lisgrades.sort(reverse=True)
         length = len(lisgrades)
         if length >= 5:
             x = grades[0]
