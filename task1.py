@@ -32,8 +32,16 @@ class student:
     def getCourses(self,courses):
         self.courses = courses
 
-    def getGrades(self,grades):
-        self.grades = grades
+    def getGrades(self,grade1=0, grade2=0, grade3=0, grade4=0, grade5=0, grade6=0, grade7=0):
+       lisgrade = []
+       lisgrade.insert(0,grade1)
+       lisgrade.insert(1,grade2)
+       lisgrade.insert(2,grade3)
+       lisgrade.insert(3,grade4)
+       lis1.insert(4,grade5)
+       lis1.insert(5,grade6)
+       lis1.insert(6,grade7)
+       self.grades = lisgrade
 
     def __init__(self,name,studentNumber,grade): # You will need to create your own input parameters for all methods
         self.name = name
