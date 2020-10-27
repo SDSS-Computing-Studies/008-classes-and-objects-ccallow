@@ -30,27 +30,55 @@ class student:
     grades = []
     
     def getCourses(self,courses):
-        self.courses = [courses]
+        self.courses = courses
 
     def getGrades(self,grades):
-        self.grades = [grades]
+        self.grades = grades
 
     def __init__(self,name,studentNumber,grade): # You will need to create your own input parameters for all methods
         self.name = name
         self.studentNumber = studentNumber
         self.grade = grade
-        
-    def getHonorRoll (self, grades):
-        sort.grades(reverse=True)
-        print(grades)
-        x = grades[1]
-        print (x)
-    def __del__(self):
-        pass
+    
+    def showCourses(self):
+        lis = print(self.courses)
+        return lis
+    
+    def showGrades(self, ind):
+        classe = self.courses[ind]
+        marks = self.grades[ind]
+        text = print(self.name + "has an average of "+marks + "% /in " +classe + " .")
+        return text
 
-    def average(self, grades):
-        average = sum(grades)
+    def average(self):
+        length = len(self.grades)
+        a = sum(self.grades)
+        average  = a/length
         return average
+        
+    def getHonorRoll (self):
+        lisgrades = self.grades
+        sort.lisgrades(reverse=True)
+        length = len(lisgrades)
+        if length >= 5:
+            x = grades[0]
+            x1 = grades[1]
+            x2 = grades[2]
+            x3= grades[3]
+            x4 = grades[4]
+            hr = (x + x1 + x2 + x3 + x4)/5
+            if hr >= 86:
+                return True
+            else:
+                return False
+        else:
+            text = print("The student is not taking enough courses.")
+            return text
+
+
+    def __del__(self):
+        x = print("Thank you for viewing the profile of " + self.name)
+
 
 def main():
     # This contains test data that will be used by the autograder.
