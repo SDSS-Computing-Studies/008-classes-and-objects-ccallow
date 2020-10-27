@@ -41,13 +41,16 @@ class student:
         self.grade = grade
         
     def getHonorRoll (self, grades):
-        
-
+        sort.grades(reverse=True)
+        print(grades)
+        x = grades[1]
+        print (x)
     def __del__(self):
         pass
 
     def average(self, grades):
-        pass
+        average = sum(grades)
+        return average
 
 def main():
     # This contains test data that will be used by the autograder.
