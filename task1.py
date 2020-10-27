@@ -69,11 +69,11 @@ class student:
         lisgrades.sort(reverse=True)
         length = len(lisgrades)
         if length >= 5:
-            x = grades[0]
-            x1 = grades[1]
-            x2 = grades[2]
-            x3= grades[3]
-            x4 = grades[4]
+            x = lisgrades[0]
+            x1 = lisgrades[1]
+            x2 = lisgrades[2]
+            x3 = lisgrades[3]
+            x4 = lisgrades[4]
             hr = (x + x1 + x2 + x3 + x4)/5
             if hr >= 86:
                 return True
